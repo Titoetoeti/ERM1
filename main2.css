@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+header{
+    margin-top: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 3rem;
+    color: #f023f4;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: #f023f4;
+    border-bottom: 3px solid #f023f4;
+}
+
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #f023f4;
+        border-bottom: 3px solid #f023f4;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+    }
+
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #f023f4;
+    }
+}
+.btn-2{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.btn-2{
+    display: block;
+    margin: 80px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border:2px solid;
+    border-image: linear-gradient(to right,#3857fa, #f023f4) 1;
+    color: #3857fa;
+    background-color: rgb(6, 3, 3);
+    width: 300px;
+   
+}
+.btn-2:hover{
+    color: #3857fa;
+    transform: scale3d(1.23);
+    border: 2px solid;
+    border-image: linear-gradient(to left, #3857fa, #f023f4) 1;
+    box-shadow: 0 0 25px #f023f4;
+    
+}
+
+section{
+    /* min-height: 100vh; */
+    padding: 5rem 9% 5rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span{
+    color: #3857fa;
+}
+
+.home-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p{
+    font-size: 1.6rem;
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #f023f4;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+p{
+    margin:20px;
+}
+
+/* .social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #f023f4;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #f023f4;
+} */
+
+/* .social-icons a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #f023f4;
+    box-shadow: 0  0 25px #f023f4;
+} */
+
+ .chon{
+    display:flex;   
+    justify-content:center;
+    position:relative;
+    min-width:250px;
+    height:50px;
+    margin-bottom: 20px;
+}
+#box{
+    border: none;
+    appearance: none;
+    padding:0 30px 0 15px;
+    width: 100%;
+    color:#3857fa;
+    background-color: #161616;
+    font-size: 20px;
+}
+.chon .vien {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3857fa;
+
+}
+.vien i {
+    font-size: 30px;
+    color: white;
+}
+/* 
+
+#box{
+    display: block;
+    padding: 2rem 4rem;
+    margin: 20px;
+    background-color: black;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    color: #3857fa;
+    font-weight: 600;
+    border: 2px solid #3857fa;
+    transition: 0.3s ease;
+    cursor: pointer;
+} */
+
+/* #box:hover{
+
+    transform: scale3d(1.03);
+    background-color: #f023f4;
+    color: black;
+    border: 2px solid #f023f4;
+    box-shadow: 0 0 25px #f023f4;
+} */
+
+/* .btn-1::after{
+    visibility: hidden;
+} */
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "English Road Map";
+    color: #f023f4;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.s infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #f023f4;
+    }
+}
+
+/* @keyframes words{
+    0%, 20%{
+        content: "Road Map Tiếng Anh";
+    }
+    21%, 40%{
+        content: "Học tiếng anh siêu dễ";
+    }
+    41%, 60%{
+        content: "lấy bằng B1";
+    }
+    61%, 80%{
+        content: "Không bị giới hạn tín chỉ";
+    }
+    81%, 100%{
+        content: "Tốt nghiệp đúng hạn";
+    }
+} */
+
+@media (max-width: 1000px){
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+
+/* ---------------------Bắt đầu từ khúc này trờ đi mọi thứ đều không liên quan cho phần roadmap--------------------------- */
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+/* body{
+  background: #ff7979;
+} */
+::selection{
+  color: #fff;
+  background: #f482f0;
+}
+.wrapper{
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 0 20px;
+  position: relative;
+}
+.wrapper .center-line{
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: #fff;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+.wrapper .row{
+  display: flex;
+}
+.wrapper .row-1{
+  justify-content: flex-start;
+}
+.wrapper .row-2{
+  justify-content: flex-end;
+}
+.wrapper .row section{
+  background: #000000;
+  border: 2px solid #f023f4;
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+}
+.wrapper .row section::before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  top: 28px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.row-1 section::before{
+  right: -7px;
+}
+.row-2 section::before{
+  left: -7px;
+}
+.row section .icon,
+.center-line .scroll-icon{
+  position: absolute;
+  background: #f2f2f2;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #f3f3f3;
+  font-size: 17px;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+}
+.center-line .scroll-icon{
+  bottom: 0px;
+  left: 50%;
+  font-size: 25px;
+  transform: translateX(-50%);
+}
+.row-1 section .icon{
+  top: 15px;
+  right: -60px;
+}
+.row-2 section .icon{
+  top: 15px;
+  left: -60px;
+}
+.row section .details,
+.row section .bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row section .details .title{
+  font-size: 22px;
+  font-weight: 600;
+}
+.row section p{
+  margin: 10px 0 17px 0;
+}
+.row section .bottom a{
+  text-decoration: none;
+  background: #3857fa;
+  color: #ffffff;
+  padding: 7px 15px;
+  border-radius: 5px;
+  /* font-size: 17px; */
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.row section .bottom a:hover{
+  transform: scale(0.97);
+}
+@media(max-width: 790px){
+  .wrapper .center-line{
+    left: 40px;
+  }
+  .wrapper .row{
+    margin: 30px 0 3px 60px;
+  }
+  .wrapper .row section{
+    width: 100%;
+  }
+  .row-1 section::before{
+    left: -7px;
+  }
+  .row-1 section .icon{
+    left: -60px;
+  }
+}
+@media(max-width: 440px){
+  .wrapper .center-line,
+  .row section::before,
+  .row section .icon{
+    display: none;
+  }
+  .wrapper .row{
+    margin: 10px 0;
+  }
+}
